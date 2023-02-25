@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Count Down Timer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src = "script.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="modal">
-    <h1>New Years Eve</h1>
-    <div class="countdown-container">
-        <div class="days-c">
+      <div class="glass">
+        <h1 id="Events">New Years Eve</h1>
+        <div class="countdown-container">
+          <div class="days-c">
             <p class="big-text" id="days">0</p>
             <span>days</span>
-        </div>
-        <div class="hours-c">
+          </div>
+          <div class="hours-c">
             <p class="big-text" id="hours">0</p>
             <span>hours</span>
-        </div>
-        <div class="min-c">
+          </div>
+          <div class="min-c">
             <p class="big-text" id="min">0</p>
             <span>min</span>
-        </div>
-        <div class="seconds-c">
+          </div>
+          <div class="seconds-c">
             <p class="big-text" id="seconds">0</p>
             <span>seconds</span>
+          </div>
         </div>
+      </div>
+      <button class="button-27" id="change-date">Enter New Date</button>
     </div>
-</div>
-</div>
-</body>
+  </body>
 </html>

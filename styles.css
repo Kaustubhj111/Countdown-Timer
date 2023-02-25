@@ -9,9 +9,9 @@
     width: 709px;
     text-align: center;
 }
-.modal{
+.glass{
     background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 5px;
+  border-radius: 10px 10px 0px 0px;
   color: #333;
   width:auto;
   height:auto;
@@ -20,7 +20,7 @@
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .modal {
+    .glass {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(4px);
       background-color: rgba(255, 255, 255, 0.5);  
@@ -67,3 +67,46 @@ h1{
 .countdown-container span{
     font-size: 1.5rem;
 }
+
+.button-27 {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 0px 0px 10px 10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .button-27:disabled {
+    pointer-events: none;
+  }
+  
+  .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
