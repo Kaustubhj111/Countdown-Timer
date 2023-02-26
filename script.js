@@ -3,10 +3,10 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('min');
 const secondsEl = document.getElementById('seconds');
 
-const newYears = "1 Jan 2023";
+var newDates = "1 Jan 2024";
 
 function countdown(){
-    const newYearsDate = new Date(newYears);
+    const newYearsDate = new Date(newDates);
     const currentDate = new Date();
 
     const totalSeconds = (newYearsDate - currentDate)/1000;
@@ -19,6 +19,13 @@ function countdown(){
     hoursEl.innerHTML= hours;
     minsEl.innerHTML= minutes;
     secondsEl.innerHTML= seconds;
+}
+
+document.getElementById("change-date").addEventListener("click",newDate)
+
+function newDate(){
+Events.innerHTML = prompt("What is the event");
+newDates = prompt("What is the new Date");
 }
 
 countdown();
